@@ -43,6 +43,6 @@ jobs:
             - uses: trstringer/manual-approval@v1
               with:
                   secret: ${{ secrets.GITHUB_TOKEN }}
-                  approvers: trstringer,acdunnigan
+                  approvers: Minori-ty
             - name: Deploy to production
               run: echo deploying
