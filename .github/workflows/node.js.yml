@@ -39,10 +39,7 @@ jobs:
         needs:
             - test
             - deploy
+        environment: publish
         steps:
-            - uses: trstringer/manual-approval@v1
-              with:
-                  secret: ${{ secrets.GITHUB_TOKEN }}
-                  approvers: Minori-ty
-            - name: Deploy to production
-              run: echo deploying
+            - name: build
+              run: echo hello
